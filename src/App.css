@@ -1,28 +1,133 @@
-.App {
+.main-container {
+  width: 100%;
+}
+
+/* navigation */
+.navigation {
+  background-color: #AB2A19;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.header-container {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  margin: 30px 0px 20px 0px;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.header-text {
+  font-size: 1.7rem;
+}
+
+/* bin */
+.bin-container {
+  background-color: #D34735;
+  font-size: 30px;
+  margin: 10px 0px;
+  padding: 15px 0px;
+  cursor: pointer;
+  white-space: nowrap;
+  /* overflow: hidden; */
+}
+
+.half-bin-container {
+  display: flex;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* .bin-name-container {
+  background-color: black;
+} */
+
+/* top level dimensions */
+.main-content-container {
+  display: flex;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.main-center-container {
+  width: 50%;
+}
+
+.main-left-empty {
+  width: 25%;
+}
+
+.main-right-empty {
+  width: 25%;
+}
+
+/* bin container inside dimensions */
+.left-content-container {
+  width: 100%;
+  /* background-color: blue; */
+}
+
+.right-content-container {
+  width: 0%;
+}
+
+/* left part of the bin container dimensions */
+.left-bin-content-container {
+  width: 20%;
+}
+
+.center-bin-content-container {
+  width: 60%;
+}
+
+.right-bin-content-container {
+  width: 20%;
+}
+
+.text {
   color: white;
+  font-weight: 700;
 }
 
-.App-title {
-  font-size: 1.5em;
+.border-radius {
+  border-radius: 3px;
 }
 
-.App-intro {
-  font-size: large;
-}
+@media (min-width: 414px) {
+  /* top level dimensions */
+  .main-center-container {
+    width: 40%;
+  }
+  
+  .main-left-empty {
+    width: 30%;
+  }
+  
+  .main-right-empty {
+    width: 30%;
+  }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  /* bin container inside dimensions */
+  .left-content-container {
+    width: 50%;
+    /* background-color: blue; */
+  }
+
+  .right-content-container {
+    width: 50%;
+  }
+
+  /* left part of the bin container dimensions */
+  .left-bin-content-container {
+    width: 25%;
+  }
+
+  .center-bin-content-container {
+    width: 50%;
+  }
+
+  .right-bin-content-container {
+    width: 25%;
+  }
 }
